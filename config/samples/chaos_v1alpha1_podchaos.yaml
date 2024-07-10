@@ -1,0 +1,9 @@
+apiVersion: chaos.chaos.guru/v1alpha1
+kind: PodChaos
+metadata:
+  labels:
+    app.kubernetes.io/name: chaos-guru
+    app.kubernetes.io/managed-by: kustomize
+  name: podchaos-sample
+spec:
+  # TODO(user): Add fields here

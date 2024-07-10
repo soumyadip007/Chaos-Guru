@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: chaos-guru
 repo: github.com/soumyadip/chaos-guru
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: chaos.guru
+  group: chaos
+  kind: PodChaos
+  path: github.com/soumyadip/chaos-guru/api/v1alpha1
+  version: v1alpha1
 version: "3"
